@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "configbot": "node configure.js"
+  },
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
