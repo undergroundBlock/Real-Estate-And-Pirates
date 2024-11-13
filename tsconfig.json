@@ -16,6 +16,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "typeRoots": [
+     "./node_modules/@types",
+     "./node_modules/telegram-webapps-types"
+    ],
     "plugins": [
       {
         "name": "next"
