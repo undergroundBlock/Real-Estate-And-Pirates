@@ -39,7 +39,7 @@ export default function Home() {
         <strong>Real Estate and pirates</strong>
         
         <div>
-        {(typeof window !== 'undefined') && userData ? (
+        {userData ? (
           <p>User ID: {userData.id}</p>
           ): (
           <p>Not logged in</p>
