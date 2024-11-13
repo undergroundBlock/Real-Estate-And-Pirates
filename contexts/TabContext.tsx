@@ -24,5 +24,5 @@ export function useTab(){
     if(context === undefined) {
         throw(new Error('user tab must be used within a TabProvider'))
     }
-    return context
+    return context;
 }
