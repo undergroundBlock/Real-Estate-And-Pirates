@@ -15,6 +15,13 @@
       "static/css/c13eee1d3be36868.css",
       "static/chunks/app/layout-3b8b24ceda29e806.js"
     ],
+    "/loading": [
+      "static/chunks/webpack-a1f9615b18135863.js",
+      "static/chunks/4bd1b696-7f4092adee896cfb.js",
+      "static/chunks/517-2f376f7af776e270.js",
+      "static/chunks/main-app-636cf9a3c287c8aa.js",
+      "static/chunks/app/loading-509973002fe64250.js"
+    ],
     "/page": [
       "static/chunks/webpack-a1f9615b18135863.js",
       "static/chunks/4bd1b696-7f4092adee896cfb.js",
