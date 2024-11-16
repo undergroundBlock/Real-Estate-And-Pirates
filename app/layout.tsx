@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
+// import { headers } from "next/headers";
+// import ContextProvider from "@/context";
+
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -19,11 +22,16 @@ export const metadata: Metadata = {
   description: "the story that was never told: pirates and real estate mini app",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // const allHeaders = await headers();
+  // const cookies = allHeaders.get('cookie');
+
   return (
     <html lang="en">
       <head> 
@@ -32,7 +40,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+                {/* <ContextProvider cookies={cookies}>{children}</ContextProvider> */}
+                {children}
       </body>
     </html>
   );
